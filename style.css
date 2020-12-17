@@ -1,0 +1,94 @@
+*{
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;    
+    margin: 0;
+}
+
+body{
+    background-color: hsl(234, 17%, 12%);
+}
+
+.main-container{
+    background: url('./images/bg-stars.svg') center no-repeat;
+}
+
+.bg{
+    background: url('./images/pattern-hills.svg') bottom no-repeat;
+    height: 100vh;
+}
+
+h4{
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 6%;
+}
+
+.middle{
+    height: 500px;
+    width: 700px;
+    background: transparent;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px 40px;
+    padding: 10px;
+}
+
+.grid-item{
+    background: linear-gradient(180deg, hsl(235, 16%, 14%),hsl(236, 21%, 26%));
+    border-radius: 5px;
+    color: hsl(345, 95%, 68%);
+    padding: 35px;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid hsl(237, 20%, 19%);
+    
+}
+
+.item-title{
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(237, 18%, 59%);
+}
+
+.social{
+    position: relative;
+    top: 200px;
+}
+
+.icon{
+    margin: 2%;
+    height: 3vh;
+}
+
+@media(max-width:900px){
+    .middle{
+        width: 80vh;
+    }
+    .grid-container{
+        grid-gap: 10px 20px;
+    }
+    .grid-item{
+        padding: 25px;
+    }  
+} 
+
+@media(max-width:600px){
+    .middle{
+        width: 80vh;
+    }
+    .grid-container{
+        grid-gap: 10px 10px;
+    }  
+    .grid-item{
+        padding: 25px;
+    } 
+} 
